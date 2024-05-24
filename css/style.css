@@ -1,0 +1,257 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+:root{
+    --color_primario: #8527c3fd;
+    --color_primario_suave:#2765c383;
+    --color_blanco:#fff;
+    --altura_header:80px;
+    --padding_left_rigth:2rem;
+    --ancho_maximo:1200px;
+}
+
+
+
+body{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+ol,ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    height: var(--altura_header);
+    background-image: url("/practica2_clase/imagenes/cuatro.gif");
+}
+.navbar {
+    padding: 0 var(--padding_left_rigth);
+    height: 100%;
+    display: flex;
+    width: min(1200px, 100% );
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.menu_hamburgesa{
+    display: none;
+}
+.logo {
+    color: var(--color_blanco);
+}
+.menu_hamburgesa:checked + .ul_links{
+    height: calc(100vh - var(--altura_header)); 
+}
+
+.list_icon {
+    color: var(--color_blanco);
+    cursor: pointer;
+}
+.ul_links {
+    background-color: var(--color_primario_suave);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 0;
+    overflow: hidden;  /* se coulta totalmente */
+    /* height: calc(100vh - var(--altura_header)); */
+    top: var(--altura_header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    transition: all .3s;
+}
+
+.links {
+    font-size: 3.5rem;
+    color: var(--color_blanco);
+    font-weight: bold;
+}
+
+/* /////////////////////////////////////////////////////// */
+
+/* SECTIO_UNO */
+.section_uno {
+    
+    margin: 0 auto;
+    width: 90%;
+    background-color: var(--color_primario_suave);
+    border-radius: 3rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* SECTION_-2 */
+
+.section_dos{
+    margin: 0 auto;
+width: 90%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+
+}
+
+.card{
+    background: #f4f5fa;
+    
+    width: 250px;
+    margin: 20px;
+    box-shadow:0px  0px 20px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.contenedor_img{
+    height: 200px;
+    width: 100%;
+    background-image: url("/practica2_clase//imagenes/html.gif");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.css{
+    background-image: url("/practica2_clase//imagenes/css.gif");
+}
+
+.js{
+    background-image: url("/practica2_clase//imagenes/js.gif");
+}
+
+a{
+    padding: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: #aba2affd;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #2765c383;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+/* SECTION TRES */
+
+.section_tres{
+    margin: 0 auto;
+    width: 90%;
+    
+    background-color: var(--color_primario_suave);
+    border-radius: 15px;
+
+}
+form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 30%;
+    
+}
+
+form label{
+    font-size: 1.2rem;
+}
+form input{
+    border-radius: 1rem;
+}
+textarea{
+    border-radius: 1rem;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background-color:#333;
+    color: #fff;
+    padding: 20px 0;
+    
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+.col{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul li{
+margin-bottom: 10px;
+}
+
+a{
+    color: var(--color_blanco);
+    text-decoration: none;
+
+}
+
+
+
+
+
+@media(min-width:768px){
+
+    .labe_hamburgesa {
+        display: none;
+    }
+
+    .ul_links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .links{
+        font-size: 1.2rem;
+        padding: 0.2rem 0.7rem;
+        transition:all .3s ;
+    }
+    .links:hover{
+         background-color:#32094d83 ;
+        
+    }
+
+}
