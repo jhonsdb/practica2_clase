@@ -88,7 +88,7 @@ form button{
 }
 
 .fondoclass{
-    background-image: url(/practica2_clase/imagenes/fondo.jpeg);
+    background-image: url(/imagenes/fondo.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

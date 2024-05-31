@@ -31,7 +31,7 @@ a{
 
 .header {
     height: var(--altura_header);
-    background-image: url("/practica2_clase/imagenes/cuatro.gif");
+    background-image: url("/imagenes/cuatro.gif");
 }
 .navbar {
     padding: 0 var(--padding_left_rigth);
@@ -126,18 +126,18 @@ width: 90%;
 .contenedor_img{
     height: 200px;
     width: 100%;
-    background-image: url("/practica2_clase//imagenes/html.gif");
+    background-image: url("/imagenes/html.gif");
     background-position: center;
     background-size: cover;
     border-radius: 5px;
 }
 
 .css{
-    background-image: url("/practica2_clase//imagenes/css.gif");
+    background-image: url("/imagenes/css.gif");
 }
 
 .js{
-    background-image: url("/practica2_clase//imagenes/js.gif");
+    background-image: url("/imagenes/js.gif");
 }
 
 a{
